@@ -1,0 +1,22 @@
+<body>
+  <div class="userBar">
+    <a href="/dashboard">
+      <i class="fa fa-home"></i>
+      <span><%= session[:username] %></span>
+    </a>
+    <form method="post" action="/logout">
+      <input type="submit" value="Log Out">
+    </form>
+  </div>
+  <div class="divider">
+    <div class="newMatch">
+      <h1>New Match</h1>
+      <a href="/play">Play!</a>
+      <h2 class="tagline"><%= @error %></h2>
+    </div>
+  </div>
+  <div class="openMatches">
+    <h1>Open Matches</h1>
+    <p>No open matches!</p>
+  </div>
+</body>

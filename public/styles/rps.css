@@ -1,0 +1,311 @@
+@import url(http://fonts.googleapis.com/css?family=Astloch:400,700|Alfa+Slab+One|Black+Ops+One|Megrim);
+@import url(http://fonts.googleapis.com/css?family=Raleway|Open+Sans:400,300,800);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.entry {
+  background-image: url('rps.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 250px;
+}
+.module {
+  padding: 30px;
+  width: 40%;
+  margin: 3% auto 0;
+
+}
+
+.title, .tagline {
+  color: black;
+  text-align: center;
+}
+.title {
+  font-family: 'Alfa Slab One', serif;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.small {
+  font-size: 1.8rem;
+}
+.tagline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.credentials {
+  font-family: 'Open Sans', sans-serif;
+}
+.credentials input[type=text],
+.credentials input[type=password] {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  width: 50%;
+  height: 40px;
+  font-size: .8rem;
+  padding-left: 15px;
+}
+.credentials input[type=text]:focus,
+.credentials input[type=password]:focus {
+  outline: none;
+  box-shadow: inset blue -1px -1px 1px;
+}
+.credentials input[type=password].shifted {
+  margin-top: -1px;
+}
+.credentials input[type=submit] {
+  display: block;
+  padding: 15px;
+  border-radius: 0px;
+  margin: 120px auto 0;
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  cursor: pointer;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: .8rem;
+}
+.credentials input[type=submit]:hover {
+  color: black;
+  border: 1px solid black;
+}
+.entrySwitch {
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 1rem;
+  color: rgba(0,0,0,0.25);
+  border: 1px solid rgba(0,0,0,0.25);
+}
+.entrySwitch:hover{
+  color: rgba(0,0,0,1);
+  border: 1px solid rgba(0,0,0,1);
+}
+.divider {
+  border-bottom: 1px solid #ccc;
+}
+.userBar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 15px;
+}
+.userBar form {
+  display: inline;
+}
+.userBar input[type=submit] {
+  border-radius: 0px;
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  cursor: pointer;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: .8rem;
+}
+.userBar input[type=submit]:hover {
+  color: black;
+  border: 1px solid black;
+}
+.userBar a {
+  text-decoration: none;
+}
+.userBar a:hover {
+  color: black;
+}
+.userBar a:visited {
+  color: black;
+}
+.userBar span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8rem;
+  color: #ccc;
+  right: 30px;
+}
+.userBar span:hover {
+  color: black;
+}
+.newMatch {
+  width: 40%;
+  margin: 15% auto 40px;
+}
+.newMatch a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 35px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ccc;
+  border: 1px solid #ccc;
+  line-height: 35px;
+  margin-bottom: 75px;
+}
+.newMatch a:hover {
+  color: black;
+  border: 1px solid black;
+}
+.openMatches {
+  width: 40%;
+  margin: 50px auto 0px;
+}
+.newMatch h1, .openMatches h1 {
+  font-family: 'Alfa Slab One';
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 20px;
+}
+.openMatches p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+.play {
+  width: 80%;
+  margin: 15% auto 0px;
+}
+.selector {
+  margin-top: 50px;
+}
+.selector div {
+  width: 33.33%;
+  display: block;
+  float: left;
+}
+.selector a {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid rgba(0,0,0,0.5);
+  height: 150px;
+  width: 150px;
+  padding: 40px;
+  box-shadow: gray 0px 0px 5px;
+}
+.selector a:hover {
+  border-color: rgba(0,0,0,1);
+}
+.selector img {
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
+}
+.selector a:hover img {
+  opacity: 1;
+}
+#rock {
+
+}
+.scoreboard {
+  width: 40%;
+  margin: 50px auto 0px;
+}
+.scoreBox {
+  border-top: 1px solid #ccc;
+  float: left;
+  width: 40%;
+  padding: 15px;
+  text-align: center;
+}
+.scoreBox:first-child {
+  border-right: 1px solid #ccc;
+}
+
+
+
+@media(max-width: 395px) {
+  .selector img,
+  .selector a {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media(max-width: 960px) {
+  .selector img,
+  .selector a {
+    width: 50px;
+    height: 50px;
+  }
+  .title {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+  .title.small {
+    margin-top: 30px;
+  }
+  .scoreBox {
+    width: 30%;
+  }
+  .scoreboard {
+    margin: 30px auto 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
